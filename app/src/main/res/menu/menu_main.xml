@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/volley_simple"
+        android:orderInCategory="100"
+        android:title="@string/volley_simple"/>
+
+    <item
+        android:id="@+id/retrofit_simple"
+        android:orderInCategory="101"
+        android:title="@string/retrofit_simple"/>
+</menu>

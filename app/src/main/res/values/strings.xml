@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Android APIs And Third Party Librairies</string>
+    <string name="response">Response</string>
+
+    <!-- String values for Volley   -->
+    <string name="textview_response">Response: %s</string>
+    <string name="volley_simple">Volley Basic Example</string>
+    <string name="retrofit_simple">Retrofit Basic Example</string>
+
+
+    <!-- String values for Retrofit   -->
+
+
+</resources>
