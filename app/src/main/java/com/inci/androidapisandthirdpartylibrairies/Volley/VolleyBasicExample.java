@@ -1,11 +1,13 @@
 package com.inci.androidapisandthirdpartylibrairies.Volley;
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
@@ -16,6 +18,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.inci.androidapisandthirdpartylibrairies.R;
+import com.inci.androidapisandthirdpartylibrairies.Retrofit.RetrofitBasicExample;
 
 import org.json.JSONObject;
 
@@ -47,6 +50,19 @@ public class VolleyBasicExample extends AppCompatActivity {
         return true;
 
         //// TODO: 1/31/2017 add selected menu item
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.retrofit_simple:
+                startActivity(new Intent(this, RetrofitBasicExample.class));
+                return true;
+            case R.id.volley_simple:
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     public void volleyJsonObjectRequest(String url){
